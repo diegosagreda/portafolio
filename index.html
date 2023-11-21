@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="estilo.css">
+    <!-- Agrega estas líneas en la sección head de tu HTML -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+
 </head>
 <body>
     <!-- MENU ENCABEZADO -->
@@ -138,94 +144,69 @@
             <h2>Skills</h2>
             <div class="fila">
                 <!-- Technical Skill -->
-                <div class="col">
-                    <h3>Technical Skills</h3>
-                    <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
+                <div class="col skill-item">
+                    <h3><span class="subtitle">LENGUAJES PROGRAMACIÒN</span></h3>
+                    <div class="skill-items">
+
+                        <p><i class="fa-brands fa-js"></i> JavaScript - TypeScript</p>
+                        <p><i class="fa-brands fa-java"></i> Java</p>
+                        <p><i class="fa-brands fa-python"></i> Python</p>
+                        <p><i class="fa-brands fa-php"></i> Php</p>
+                        <p><i class="fa-solid fa-code"></i>
+                            Visual Basic</p>
+                        <p><i class="fa-solid fa-code"></i> C#</p>
                     </div>
-                    <div class="skill">
-                        <span>HTML & CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>89%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Java</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Python</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Php</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
+                  
                    
                 </div>
-               
+                <br />
                 <!-- Professional Skills -->
-                <div class="col">
-                    <h3>Professional Skills</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
+                <div class="col skill-item">
+                    <h3><span class="subtitle">FRAMEWORKS FRONTEND</span></h3>
+                    <div class="skill-items">
+                        <p><i class="fa-brands fa-react"></i> React Js</p>
+                        <p><i class="fa-brands fa-vuejs"></i> Vue3</p>
+                        <p><i class="fa-brands fa-angular"></i> Angular</p>
                     </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <br />
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col skill-item">
+
+                    <h3><span class="subtitle">FRAMEWORKS BACKEND</span></h3>
+                    <div class="skill-items">
+
+                        <p><i class="fa-solid fa-code"></i>  Spring Boot</p>
+                        <p><i class="fa-brands fa-laravel"></i> Laravel</p>
+                        <p><i class="fa-brands fa-node-js"></i> Node JS</p>
+                        <p><i class="fa-solid fa-code"></i>  Django</p>
                     </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>99%</span>
-                            </div>
-                        </div>
+
+                </div>
+                <br />
+                <!-- Professional Skills -->
+                <div class="col  skill-item">
+                    <h3><span class="subtitle">BASES DE DATOS</span></h3>
+                    <div class="skill-items">
+                        <p><i class="fa-solid fa-database"></i> PostgreSQL</p>
+                        <p><i class="fa-solid fa-database"></i> MySQL</p>
+                        <p><i class="fa-solid fa-database"></i> MongoDB</p>
+                        <p><i class="fa-solid fa-database"></i> Firebase</p>
                     </div>
-                    <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>65%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Proyect Management</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>94%</span>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+              
+            </div>
+            <br />
+            <div class="fila">
+                <div class="col skill-item">
+                    <h3><span class="subtitle">CONTROL DE VERSIONES</span></h3>
+                    <div class="skill-items">
+                        <p><i class="fa-brands fa-git-alt"></i> Git</p>
+                        <p><i class="fa-brands fa-square-github"></i> GitHub</p>
+                        <p><i class="fa-brands fa-gitlab"></i> GitLab</p>
+                    </div> 
                 </div>
             </div>
         </div>
@@ -239,28 +220,43 @@
                 <div class="col izquierda">
                     <h3>Educación</h3>
                     <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Ingenieria de Sistemas</h4>
+                        <span class="casa">Universidad de Nariño</span>
+                        <span class="fecha">2019 - Actualidad</span>
+                        
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Diplomado en Machine Learning and Data Science</h4>
+                        <span class="casa">Universidad Nacional</span>
+                        <span class="fecha">2023 - Dic 2023</span>
+               
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Diplomado en Desarrollo de Software</h4>
+                        <span class="casa">Universidad de Antioquia</span>
+                        <span class="fecha">May 2022 - Sep 2022</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Diplomado en Desarrollo Web</h4>
+                        <span class="casa">Universidad de Antioquia</span>
+                        <span class="fecha">Ago 2022 - Dic 2022</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Diplomado en Programacion y  Codificaciòn</h4>
+                        <span class="casa">Pontificia Universidad Javeriana</span>
+                        <span class="fecha">Sep 2021 - Mar 2022</span>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -271,86 +267,147 @@
                     <h3>Experiencia de trabajo</h3>
                     <div class="item der">
                         <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <span class="casa"><strong> KIGYOKA.</strong> Bogota DC</span>
+                        <span class="fecha">Mar 2022 - Dic 2023</span>
+                        <p class="text-justify">
+                            
+Colaboré en el desarrollo de una aplicación web utilizando Vue 3 y JavaScript, contribuyendo al diseño atractivo mediante las herramientas de estilizado Bootstrap y Bulma CSS3. Además, aporté a la implementación exitosa de la gestión de datos mediante Firebase, garantizando una base de datos eficiente y en tiempo real para respaldar el proyecto.
+                        </p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Back Developer</h4>
+                        <span class="casa">Universidad de Nariño</span>
+                        <span class="fecha">Jun 2023 - Dic 2023</span>
+                        <p class="text-justify">
+                            Colaboré en el desarrollo de un sistema de información para proyectos en la Universidad de Nariño desde junio de 2023 hasta la actualidad. Durante este proyecto, utilicé tecnologías como Asp .Net y Visual Basic para la implementación de aplicaciones, y también desempeñé un papel crucial en el diseño de bases de datos, utilizando MySQL como sistema de gestión. Mi contribución se enfocó en asegurar un desarrollo eficiente y funcional del sistema, particularmente adaptado para la gestión de proyectos universitarios.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Full Stack Developer</h4>
+                        <span class="casa">Freelance</span>
+                        <span class="fecha">Ene 2020 - Mar 2022</span>
+                        <p class="text-justify">Colaboré en el desarrollo de la plataforma para docentes, donde utilicé React JS, Bootstrap y CSS3 para diseñar la interfaz de usuario. Contribuí a la implementación de la lógica del lado del servidor mediante Node JS, Express y PostgresSQL para gestionar la base de datos. Mi aporte se centró en garantizar una experiencia eficiente y amigable para los docentes, aprovechando las tecnologías mencionadas en el proyecto.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
+                 
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SECCION PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="img/p1.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
+  <!-- SECCION PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="container">
+            <h3>Proyecto - My Virtual Trainer</h3>
+            <br>
+            <div id="theCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicadores -->
+              <ol class="carousel-indicators">
+                <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#theCarousel" data-slide-to="1"></li>
+                <li data-target="#theCarousel" data-slide-to="2"></li>
+                <li data-target="#theCarousel" data-slide-to="3"></li>
+                
+              </ol>
+          
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="./img/mvt/login.png" alt="Ilustracion" > 
+                   <div class="carousel-caption d-none d-md-block">
+              <h3>Login</h3>
+              <p>Login aplicacion</p>
+            </div>
+            </div>
+                <div class="item">
+                  <img src="/img/mvt/perfil.png" alt="fotografia" width="600" height="424"> 
+                   <div class="carousel-caption d-none d-md-block">
+              <h3>Perfil Entrenador</h3>
+            </div>
                 </div>
-                <div class="proyecto">
-                    <img src="img/p2.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p3.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p4.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p5.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p6.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
+          
+            <div class="item">
+                <img src="/img/mvt/contacto.png" alt="pintura" width="600" height="424">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Información de contacto</h3> 
                 </div>
             </div>
+
+            <div class="item">
+                <img src="/img/mvt/solicitudes_pendientes.png" alt="diseno" width="600" height="424"> 
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Solicitudes Entrenador</h3>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="/img/mvt/solicitudes_aprobadas.png" alt="diseno" width="600" height="424"> 
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Solicitudes Aprobadas Entrenador</h3>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="/img/mvt/perfil_deportista.png" alt="diseno" width="600" height="424"> 
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Perfil Deportista</h3>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="/img/mvt/plan_gratuito.png" alt="diseno" width="600" height="424"> 
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Plan Gratuito                      
+                    </h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/mvt/crear_rutina.png" alt="diseno" width="600" height="424"> 
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Rutina                     
+                    </h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/mvt/calendario.png" alt="diseno" width="600" height="424"> 
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Calendario                    
+                    </h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/mvt/chat.png" alt="diseno" width="600" height="424"> 
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Chat                     
+                    </h3>
+                </div>
+            </div>
+          
+          
+            <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">anterior</span>
+            </a>
+            <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">siguiente</span>
+            </a>
+            </div>
         </div>
-    </section>
+    </div>
+    
+</section>
+
+
 
     <!-- SECCION CONTACTO -->
     <section id="contacto" class="contacto">
@@ -376,15 +433,15 @@
                         <ul>
                             <li>
                                 <i class="fa-solid fa-location-dot"></i>
-                                Nicaragua 159, San Rafael Mza
+                                Pasto - Nariño
                             </li>
                             <li>
                                 <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: 2384 - 4343443 
+                               +57 3222894510 
                             </li>
-                            <li>
+                            <li style="display: flex;">
                                 <i class="fa-solid fa-envelope"></i>
-                                Email: cw@example.com
+                                 diegoagreda1996@gmail.com
                             </li>
                         </ul>
                     </div>
@@ -399,14 +456,17 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-solid fa-rss"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100008639956442" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://github.com/diegosagreda" target="_blank"><i class="fa-brands fa-github"></i></a>
+       
+            <a href="https://www.linkedin.com/in/luis-diego-agreda/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        
         </div>
     </footer>
 
+   
     <script src="script.js"></script>
+
+ 
 </body>
 </html>

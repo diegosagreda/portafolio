@@ -409,6 +409,19 @@ html{
     background-color: #252A2E;
     position: relative;
 }
+.skill-item{
+    background-color: #1E2326; 
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.skill-item p i {
+    font-size: 20px;
+    margin-right: 20px;
+}
+.skill-items{
+    padding: 20px;
+}
 .curriculum .fila .item h4{
     font-size: 20px;
     margin-bottom: 10px;
@@ -614,6 +627,9 @@ html{
     display: inline-block;
     margin-right: 20px;
 }
+.subtitle{
+    color: #1c8ab6;
+}
 footer{
     background-color: #252A2E;
     color: #fff;
@@ -652,6 +668,15 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+.text-justify{
+    text-align: justify;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 60%;
+      margin: auto;
+  }
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
