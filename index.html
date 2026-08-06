@@ -4,538 +4,452 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
+    <meta name="description" content="Portafolio profesional de Luis Diego Agreda Jamioy, desarrollador Full Stack y líder técnico.">
+    <title>Luis Diego Agreda Jamioy | Desarrollador Full Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="estilo.css">
-    <!-- Agrega estas líneas en la sección head de tu HTML -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   
-
 </head>
 <body>
-    <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Diego</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="#inicio" aria-label="Ir al inicio">
+                <span>LD</span>
+                <strong>Diego Agreda</strong>
+            </a>
+
+            <nav id="nav" class="site-nav" aria-label="Navegación principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#perfil">Perfil</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portafolio</a>
+                <a href="#contacto">Contacto</a>
             </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+
+            <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
-            </div>
+            </button>
         </header>
+
+        <main>
+            <section id="inicio" class="hero section">
+                <div class="hero-copy">
+                    <p class="eyebrow">Desarrollador Full Stack | Líder Técnico</p>
+                    <h1>Luis Diego Agreda Jamioy</h1>
+                    <p class="hero-text">
+                        Ingeniero de Sistemas enfocado en construir productos web y móviles escalables, mantenibles y alineados con objetivos de negocio.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#portfolio">
+                            Ver proyectos
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a class="btn btn-secondary" href="mailto:diegoagreda1996@gmail.com">
+                            Contactar
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-meta" aria-label="Datos de contacto">
+                        <span><i class="fa-solid fa-location-dot"></i> Pasto, Nariño</span>
+                        <a href="tel:+573222894510"><i class="fa-solid fa-phone"></i> 322 289 4510</a>
+                        <a href="mailto:diegoagreda1996@gmail.com"><i class="fa-solid fa-envelope"></i> diegoagreda1996@gmail.com</a>
+                    </div>
+                </div>
+
+                <aside class="hero-card" aria-label="Resumen profesional">
+                    <div class="profile-frame">
+                        <img src="img/perfil.jpeg" alt="Foto de Luis Diego Agreda Jamioy">
+                    </div>
+                    <div>
+                        <p class="availability">Disponible para proyectos técnicos</p>
+                        <h2>Full Stack con foco en liderazgo, cloud y calidad de código.</h2>
+                    </div>
+                    <div class="hero-stats">
+                        <div>
+                            <strong>5+</strong>
+                            <span>Experiencias profesionales</span>
+                        </div>
+                        <div>
+                            <strong>8+</strong>
+                            <span>Stacks productivos</span>
+                        </div>
+                        <div>
+                            <strong>3</strong>
+                            <span>Roles cloud</span>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <section id="perfil" class="section profile-section">
+                <div class="section-heading">
+                    <p class="eyebrow">Perfil profesional</p>
+                    <h2>Desarrollo de software con criterio técnico y visión de producto.</h2>
+                </div>
+
+                <div class="profile-grid">
+                    <article class="panel profile-summary">
+                        <p>
+                            Ingeniero de Sistemas y desarrollador Full Stack con experiencia en liderazgo técnico, desarrollo web y móvil, soporte de plataformas empresariales e implementación de soluciones en la nube.
+                        </p>
+                        <p>
+                            Manejo tecnologías como Vue 3, Kotlin, Go, Java, Python, PostgreSQL, Firebase y AWS. Estoy orientado a la calidad del código, la resolución de problemas y la construcción de soluciones escalables y mantenibles.
+                        </p>
+                    </article>
+
+                    <div class="focus-list">
+                        <article class="focus-item">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <h3>Liderazgo técnico</h3>
+                            <p>Coordinación de equipos, revisiones de código, buenas prácticas y consistencia arquitectónica.</p>
+                        </article>
+                        <article class="focus-item">
+                            <i class="fa-solid fa-cloud"></i>
+                            <h3>Cloud & automatización</h3>
+                            <p>Implementación de servicios en AWS, Firebase y Google Cloud Platform para procesos escalables.</p>
+                        </article>
+                        <article class="focus-item">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <h3>Full Stack</h3>
+                            <p>Construcción de interfaces, APIs, servicios backend, integraciones y modelos de datos.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experiencia" class="section experience-section">
+                <div class="section-heading compact">
+                    <p class="eyebrow">Experiencia profesional</p>
+                    <h2>Trayectoria en plataformas web, móviles y empresariales.</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-date">Ene 2025 - Actualidad</div>
+                        <div class="timeline-content">
+                            <div class="role-heading">
+                                <h3>Desarrollador Full Stack</h3>
+                                <span>JIKKOSOFT | Cali, Colombia</span>
+                            </div>
+                            <ul>
+                                <li>Brindo soporte técnico y evolutivo a la plataforma, corrigiendo incidencias y realizando ajustes funcionales en servicios desarrollados en Go, con PostgreSQL e infraestructura en AWS.</li>
+                                <li>Analizo, documento y resuelvo errores junto con el equipo de desarrollo, contribuyendo a la estabilidad de la plataforma y a la calidad del código en los diferentes entornos.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-date">Dic 2022 - Actualidad</div>
+                        <div class="timeline-content">
+                            <div class="role-heading">
+                                <h3>Desarrollador Web | Líder Técnico</h3>
+                                <span>Kigyoka S.A.S. | Bogotá, Colombia</span>
+                            </div>
+                            <ul>
+                                <li>Coordino técnicamente al equipo de desarrollo, promoviendo buenas prácticas, consistencia arquitectónica y calidad del código.</li>
+                                <li>Lidero el desarrollo e implementación de nuevas funcionalidades para plataformas web y móviles utilizando Vue 3, Kotlin y Firebase.</li>
+                                <li>Participo en revisiones de código, resolución de incidencias y definición de soluciones orientadas a la estabilidad y evolución del producto.</li>
+                                <li>Implemento y administro servicios de Google Cloud Platform, incluyendo Cloud Functions, Cloud Storage, Cloud Scheduler y mensajería.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-date">Ago 2024 - Sep 2025</div>
+                        <div class="timeline-content">
+                            <div class="role-heading">
+                                <h3>Desarrollador Full Stack</h3>
+                                <span>Crystal IT Service | Pasto, Colombia</span>
+                            </div>
+                            <ul>
+                                <li>Desarrollé e implementé nuevas funcionalidades utilizando Java JSP, PostgreSQL, JavaScript y Python con Django.</li>
+                                <li>Participé en la evolución de una aplicación Android desarrollada en Java, incorporando mejoras funcionales y técnicas.</li>
+                                <li>Apliqué buenas prácticas durante el ciclo de desarrollo para asegurar consistencia, mantenibilidad y calidad del código.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-date">Nov 2023 - May 2024</div>
+                        <div class="timeline-content">
+                            <div class="role-heading">
+                                <h3>Desarrollador Full Stack | Freelancer</h3>
+                                <span>VoxQI | Remoto</span>
+                            </div>
+                            <ul>
+                                <li>Migré el servicio de autenticación de usuarios a AWS Cognito.</li>
+                                <li>Desarrollé un módulo de procesamiento de imágenes y videos para campañas publicitarias con Google Vision y la API de GPT-4.</li>
+                                <li>Construí interfaces de usuario con React y endpoints en Laravel para soportar funcionalidades de la aplicación.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-date">Jun 2023 - Dic 2023</div>
+                        <div class="timeline-content">
+                            <div class="role-heading">
+                                <h3>Desarrollador Backend</h3>
+                                <span>Universidad de Nariño | Pasto, Colombia</span>
+                            </div>
+                            <ul>
+                                <li>Desarrollé funcionalidades para la plataforma de la Vicerrectoría de Investigaciones utilizando Visual Basic y MySQL.</li>
+                                <li>Proporcioné soporte técnico para conservar la disponibilidad, funcionalidad y estabilidad de la aplicación en producción.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="skills" class="section skills-section">
+                <div class="section-heading compact">
+                    <p class="eyebrow">Competencias técnicas</p>
+                    <h2>Stack preparado para construir, mantener y escalar productos.</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <h3><i class="fa-solid fa-terminal"></i> Lenguajes</h3>
+                        <div class="tags">
+                            <span>JavaScript</span>
+                            <span>TypeScript</span>
+                            <span>Java</span>
+                            <span>Kotlin</span>
+                            <span>Python</span>
+                            <span>PHP</span>
+                            <span>Go</span>
+                            <span>C#</span>
+                            <span>Visual Basic</span>
+                            <span>SQL</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3><i class="fa-solid fa-window-maximize"></i> Frontend</h3>
+                        <div class="tags">
+                            <span>Vue 3</span>
+                            <span>React</span>
+                            <span>Angular</span>
+                            <span>JavaScript</span>
+                            <span>TypeScript</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3><i class="fa-solid fa-server"></i> Backend</h3>
+                        <div class="tags">
+                            <span>Spring Boot</span>
+                            <span>Node.js</span>
+                            <span>Django</span>
+                            <span>Laravel</span>
+                            <span>Symfony</span>
+                            <span>Go</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3><i class="fa-solid fa-database"></i> Bases de datos</h3>
+                        <div class="tags">
+                            <span>PostgreSQL</span>
+                            <span>MySQL</span>
+                            <span>MongoDB</span>
+                            <span>Firebase</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card wide">
+                        <h3><i class="fa-solid fa-toolbox"></i> Herramientas y nube</h3>
+                        <div class="tags">
+                            <span>Git</span>
+                            <span>Docker</span>
+                            <span>Jira</span>
+                            <span>Trello</span>
+                            <span>AWS</span>
+                            <span>Google Cloud Platform</span>
+                            <span>Apache Spark</span>
+                            <span>Cloud Functions</span>
+                            <span>Cloud Storage</span>
+                            <span>Cloud Scheduler</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="formacion" class="section education-section">
+                <div class="section-heading compact">
+                    <p class="eyebrow">Formación académica</p>
+                    <h2>Base académica complementada con especialización técnica.</h2>
+                </div>
+
+                <div class="education-grid">
+                    <article>
+                        <div class="credential-mark">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Título profesional</span>
+                        </div>
+                        <div>
+                            <time>Mar 2019 - Abr 2024</time>
+                            <h3>Ingeniería de Sistemas</h3>
+                            <p>Universidad de Nariño | Pasto, Nariño</p>
+                        </div>
+                    </article>
+                    <article>
+                        <a class="credential-preview" href="img/diplomas/machine_learning.jpeg" target="_blank" rel="noopener" aria-label="Ver diploma de Machine Learning y Data Science">
+                            <img src="img/diplomas/machine_learning.jpeg" alt="Diploma en Machine Learning y Data Science">
+                        </a>
+                        <div>
+                            <time>Jul 2023 - Dic 2023</time>
+                            <h3>Diplomado en Machine Learning y Data Science</h3>
+                            <p>Universidad Nacional de Colombia | Bogotá, Colombia</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="credential-mark">
+                            <i class="fa-solid fa-award"></i>
+                            <span>Diplomado</span>
+                        </div>
+                        <div>
+                            <time>Ago 2022 - Dic 2022</time>
+                            <h3>Diplomado en Desarrollo Web</h3>
+                            <p>Universidad de Antioquia | Medellín, Colombia</p>
+                        </div>
+                    </article>
+                    <article>
+                        <a class="credential-preview" href="img/diplomas/universidad_antioquia.jpeg" target="_blank" rel="noopener" aria-label="Ver diploma de Desarrollo de Software">
+                            <img src="img/diplomas/universidad_antioquia.jpeg" alt="Diploma en Desarrollo de Software">
+                        </a>
+                        <div>
+                            <time>May 2022 - Ago 2022</time>
+                            <h3>Diplomado en Desarrollo de Software</h3>
+                            <p>Universidad de Antioquia | Medellín, Colombia</p>
+                        </div>
+                    </article>
+                    <article>
+                        <a class="credential-preview" href="img/diplomas/universidad_javeriana.jpeg" target="_blank" rel="noopener" aria-label="Ver diploma de Codificación y Programación">
+                            <img src="img/diplomas/universidad_javeriana.jpeg" alt="Diploma en Codificación y Programación">
+                        </a>
+                        <div>
+                            <time>Formación complementaria</time>
+                            <h3>Diplomado en Codificación y Programación</h3>
+                            <p>Pontificia Universidad Javeriana | Bogotá, Colombia</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="portfolio" class="section portfolio-section">
+                <div class="section-heading compact">
+                    <p class="eyebrow">Portafolio</p>
+                    <h2>Proyectos con experiencia real de producto.</h2>
+                </div>
+
+                <div class="project-list">
+                    <article class="project-card">
+                        <div class="project-info">
+                            <span class="project-label">Aplicación web</span>
+                            <h3>My Virtual Trainer</h3>
+                            <p>Versión web de la app para entrenadores y deportistas, con gestión de perfiles, planes, solicitudes, rutinas, calendario y chat.</p>
+                            <div class="tags">
+                                <span>Kotlin</span>
+                                <span>Firebase</span>
+                                <span>Mobile UX</span>
+                            </div>
+                        </div>
+                        <div class="project-gallery" aria-label="Capturas de My Virtual Trainer">
+                            <img src="img/mvt/login.png" alt="Login de My Virtual Trainer">
+                            <img src="img/mvt/perfil.png" alt="Perfil de entrenador en My Virtual Trainer">
+                            <img src="img/mvt/solicitudes_pendientes.png" alt="Solicitudes pendientes de entrenador">
+                            <img src="img/mvt/crear_rutina.png" alt="Creación de rutina en My Virtual Trainer">
+                            <img src="img/mvt/chat.png" alt="Chat de My Virtual Trainer">
+                        </div>
+                    </article>
+
+                    <article class="project-card mobile-project">
+                        <div class="project-info">
+                            <span class="project-label">Aplicación móvil</span>
+                            <h3>My Virtual Trainer Mobile</h3>
+                            <p>App mobile para seguimiento deportivo, rutinas, calendario, progreso, morfología e integración con servicios como Strava.</p>
+                            <div class="tags">
+                                <span>Kotlin</span>
+                                <span>Firebase</span>
+                                <span>UX mobile</span>
+                                <span>Fitness tech</span>
+                            </div>
+                        </div>
+                        <div class="project-gallery mobile-gallery" aria-label="Capturas móviles de My Virtual Trainer">
+                            <img src="img/mvt-mobile/WhatsApp Image 2026-08-05 at 9.38.08 Pxx.jpeg" alt="Pantalla de inicio de My Virtual Trainer mobile">
+                            <img src="img/mvt-mobile/WhatsApp Image 2026-08-05 at 9.38.01 PM.jpeg" alt="Dashboard principal de My Virtual Trainer mobile">
+                            <img src="img/mvt-mobile/WhatsApp Image 2026-08-05 at 9.38.06sPM.jpeg" alt="Información morfológica en My Virtual Trainer mobile">
+                            <img src="img/mvt-mobile/WhatsApp Image 206-08-05 at 9.38.06 PM.jpeg" alt="Gráfica de rutina en My Virtual Trainer mobile">
+                            <img src="img/mvt-mobile/WhatsApp Image 2026-08-05 at 9.38.17 PM.jpeg" alt="Estadísticas de progreso en My Virtual Trainer mobile">
+                            <img src="img/mvt-mobile/WhatsApp Image 2026-08-05 at 9.38.06 PM.jpeg" alt="Integración con Strava en My Virtual Trainer mobile">
+                            <img src="img/mvt-mobile/WhatsApp Image 2026-08-05 at 9.38.57 PM.jpeg" alt="Calendario de rutinas en My Virtual Trainer mobile">
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-info">
+                            <span class="project-label">Sistema web</span>
+                            <h3>Sistema de Gestión de Semilleros</h3>
+                            <p>Plataforma para administrar semilleros, coordinadores, semilleristas y proyectos de investigación en contexto universitario.</p>
+                            <div class="tags">
+                                <span>Visual Basic</span>
+                                <span>MySQL</span>
+                                <span>Gestión académica</span>
+                            </div>
+                        </div>
+                        <div class="project-gallery" aria-label="Capturas del Sistema de Gestión de Semilleros">
+                            <img src="img/semilleros/Login.png" alt="Login del Sistema de Gestión de Semilleros">
+                            <img src="img/semilleros/panelAdmin.png" alt="Panel administrativo de semilleros">
+                            <img src="img/semilleros/proyecto.png" alt="Registro de proyecto de investigación">
+                            <img src="img/semilleros/semilleristas.png" alt="Listado de semilleristas">
+                            <img src="img/semilleros/Semilleros.png" alt="Vista de semilleros">
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contacto" class="section contact-section">
+                <div class="contact-panel">
+                    <div>
+                        <p class="eyebrow">Contacto</p>
+                        <h2>Hablemos sobre producto, backend, mobile o liderazgo técnico.</h2>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a href="mailto:diegoagreda1996@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                            diegoagreda1996@gmail.com
+                        </a>
+                        <a href="tel:+573222894510">
+                            <i class="fa-solid fa-phone"></i>
+                            +57 322 289 4510
+                        </a>
+                        <a href="https://github.com/diegosagreda" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/luis-diego-agreda" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>© <span id="year"></span> Luis Diego Agreda Jamioy. Portafolio profesional.</p>
+            <a href="#inicio" aria-label="Volver al inicio">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </footer>
     </div>
 
-    <!-- SECCION INICIO -->
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/perfil.png" alt="">
-            </div>
-            <h1>DIEGO AGREDA</h1>
-            <h2>Ingeniero de Sistemas - Desarrollador de Software</h2>
-            <div class="redes">
-                <a href="https://www.facebook.com/profile.php?id=100008639956442" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://github.com/diegosagreda" target="_blank"><i class="fa-brands fa-github"></i></a>
-           
-                <a href="https://www.linkedin.com/in/luis-diego-agreda/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-               
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Diego Agreda.</span> Soy un <span>Ingeniero de Sistemas</span>  y desarrollador de software apasionado por la tecnología. Con una sólida formación académica y experiencia en el diseño y desarrollo de aplicaciones informáticas, he participado en diversos proyectos que van desde el desarrollo de software para empresas hasta la creación de soluciones para usuarios finales. Me considero un profesional comprometido con la calidad y la excelencia en cada uno de mis proyectos, y estoy siempre en busca de nuevas oportunidades para seguir aprendiendo y creciendo en mi carrera.</p>
-
-            <div class="fila">
-                <!-- datos personales -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Cumpleaños</strong>
-                            25-02-1996
-                        </li>
-                        <li>
-                            <strong>Teléfono</strong>
-                            +57 3222894510
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            diegoagreda1996@gmail.com
-                        </li>
-                        <li>
-                            <strong>Dirección</strong>
-                            Calle 19A No 44B-46 Pasto, Colombia
-                        </li>
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>FREELANCE</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- intereses -->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-brands fa-apple"></i>
-                            <span>MAC OS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-person-hiking"></i>
-                            <span>DEPORTE</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-book"></i>
-                            <span>LIBROS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-car"></i>
-                            <span>AUTOS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-camera"></i>
-                            <span>FOTOS</span>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <!--<button>
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>-->
-            <a class="button" href="https://drive.google.com/file/d/1xKzLp6wcDrC1WeA7F8magMtrpbHqm9uO/view?usp=drive_link" target="_blank">Descargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span> </a>
-        </div>
-    </section>
-
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-                <!-- Technical Skill -->
-                <div class="col skill-item">
-                    <h3><span class="subtitle">LENGUAJES PROGRAMACIÒN</span></h3>
-                    <div class="skill-items">
-
-                        <p><i class="fa-brands fa-js"></i> JavaScript - TypeScript</p>
-                        <p><i class="fa-brands fa-java"></i> Java</p>
-                        <p><i class="fa-brands fa-python"></i> Python</p>
-                        <p><i class="fa-brands fa-php"></i> Php</p>
-                        <p><i class="fa-solid fa-code"></i>
-                            Visual Basic</p>
-                        <p><i class="fa-solid fa-code"></i> C#</p>
-                    </div>
-                  
-                   
-                </div>
-                <br />
-                <!-- Professional Skills -->
-                <div class="col skill-item">
-                    <h3><span class="subtitle">FRAMEWORKS FRONTEND</span></h3>
-                    <div class="skill-items">
-                        <p><i class="fa-brands fa-react"></i> React Js</p>
-                        <p><i class="fa-brands fa-vuejs"></i> Vue3</p>
-                        <p><i class="fa-brands fa-angular"></i> Angular</p>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div class="fila">
-                <!-- Technical Skill -->
-                <div class="col skill-item">
-
-                    <h3><span class="subtitle">FRAMEWORKS BACKEND</span></h3>
-                    <div class="skill-items">
-
-                        <p><i class="fa-solid fa-code"></i>  Spring Boot</p>
-                        <p><i class="fa-brands fa-laravel"></i> Laravel</p>
-                        <p><i class="fa-brands fa-node-js"></i> Node JS</p>
-                        <p><i class="fa-solid fa-code"></i>  Django</p>
-                    </div>
-
-                </div>
-                <br />
-                <!-- Professional Skills -->
-                <div class="col  skill-item">
-                    <h3><span class="subtitle">BASES DE DATOS</span></h3>
-                    <div class="skill-items">
-                        <p><i class="fa-solid fa-database"></i> PostgreSQL</p>
-                        <p><i class="fa-solid fa-database"></i> MySQL</p>
-                        <p><i class="fa-solid fa-database"></i> MongoDB</p>
-                        <p><i class="fa-solid fa-database"></i> Firebase</p>
-                    </div>
-                </div>
-              
-            </div>
-            <br />
-            <div class="fila">
-                <div class="col skill-item">
-                    <h3><span class="subtitle">CONTROL DE VERSIONES</span></h3>
-                    <div class="skill-items">
-                        <p><i class="fa-brands fa-git-alt"></i> Git</p>
-                        <p><i class="fa-brands fa-square-github"></i> GitHub</p>
-                        <p><i class="fa-brands fa-gitlab"></i> GitLab</p>
-                    </div> 
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION CURRICULUM -->
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>Ingenieria de Sistemas</h4>
-                        <span class="casa">Universidad de Nariño</span>
-                        <span class="fecha">2019 - Actualidad</span>
-                        
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Diplomado en Machine Learning and Data Science</h4>
-                        <span class="casa">Universidad Nacional</span>
-                        <span class="fecha">2023 - Dic 2023</span>
-               
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Diplomado en Desarrollo de Software</h4>
-                        <span class="casa">Universidad de Antioquia</span>
-                        <span class="fecha">May 2022 - Sep 2022</span>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Diplomado en Desarrollo Web</h4>
-                        <span class="casa">Universidad de Antioquia</span>
-                        <span class="fecha">Ago 2022 - Dic 2022</span>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Diplomado en Programacion y  Codificaciòn</h4>
-                        <span class="casa">Pontificia Universidad Javeriana</span>
-                        <span class="fecha">Sep 2021 - Mar 2022</span>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
-                    <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa"><strong> KIGYOKA.</strong> Bogota DC</span>
-                        <span class="fecha">Dic 2022 - Jun 2024</span>
-                        <p class="text-justify">
-                            
-Colaboré en el desarrollo de una aplicación web utilizando Vue 3 y JavaScript, contribuyendo al diseño atractivo mediante las herramientas de estilizado Bootstrap y Bulma CSS3. Además, aporté a la implementación exitosa de la gestión de datos mediante Firebase, garantizando una base de datos eficiente y en tiempo real para respaldar el proyecto.
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Back Developer</h4>
-                        <span class="casa">Universidad de Nariño</span>
-                        <span class="fecha">Jun 2023 - Dic 2023</span>
-                        <p class="text-justify">
-                            Colaboré en el desarrollo de un sistema de información para proyectos en la Universidad de Nariño desde junio de 2023 hasta la actualidad. Durante este proyecto, utilicé tecnologías como Asp .Net y Visual Basic para la implementación de aplicaciones, y también desempeñé un papel crucial en el diseño de bases de datos, utilizando MySQL como sistema de gestión. Mi contribución se enfocó en asegurar un desarrollo eficiente y funcional del sistema, particularmente adaptado para la gestión de proyectos universitarios.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Full Stack Developer</h4>
-                        <span class="casa">Freelance</span>
-                        <span class="fecha">Ene 2022 - Ago 2022</span>
-                        <p class="text-justify">Colaboré en el desarrollo de la plataforma para docentes, donde utilicé React JS, Bootstrap y CSS3 para diseñar la interfaz de usuario. Contribuí a la implementación de la lógica del lado del servidor mediante Node JS, Express y PostgresSQL para gestionar la base de datos. Mi aporte se centró en garantizar una experiencia eficiente y amigable para los docentes, aprovechando las tecnologías mencionadas en el proyecto.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                 
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION PORTFOLIO -->
-    <!-- SECCION PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
-            <div class="container">
-                <h3>Proyecto - My Virtual Trainer</h3>
-                <br>
-                <div id="theCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicadores -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#theCarousel" data-slide-to="1"></li>
-                        <li data-target="#theCarousel" data-slide-to="2"></li>
-                        <li data-target="#theCarousel" data-slide-to="3"></li>
-                    </ol>
-                    
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="./img/mvt/login.png" alt="Ilustracion"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Login</h3>
-                                <p>Login aplicacion</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/mvt/perfil.png" alt="fotografia" width="600" height="424"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Perfil Entrenador</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/mvt/contacto.png" alt="pintura" width="600" height="424">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Información de contacto</h3> 
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/mvt/solicitudes_pendientes.png" alt="diseno" width="600" height="424"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Solicitudes Entrenador</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/mvt/solicitudes_aprobadas.png" alt="diseno" width="600" height="424"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Solicitudes Aprobadas Entrenador</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/mvt/perfil_deportista.png" alt="diseno" width="600" height="424"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Perfil Deportista</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/mvt/plan_gratuito.png" alt="diseno" width="600" height="424"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Plan Gratuito</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/mvt/crear_rutina.png" alt="diseno" width="600" height="424"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Rutina</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/mvt/calendario.png" alt="diseno" width="600" height="424"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Calendario</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/mvt/chat.png" alt="diseno" width="600" height="424"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Chat</h3>
-                            </div>
-                        </div>
-                        <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">anterior</span>
-                        </a>
-                        <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">siguiente</span>
-                        </a>
-                    </div>
-                </div>
-                <br>
-                <h3>Proyecto - Sistema Gestión de Semilleros Universidad de Nariño</h3>
-                <br>
-                <div id="theCarousel1" class="carousel slide" data-ride="carousel">
-                    <!-- Indicadores -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#theCarousel1" data-slide-to="0" class="active"></li>
-                        <li data-target="#theCarousel1" data-slide-to="1"></li>
-                        <li data-target="#theCarousel1" data-slide-to="2"></li>
-                        <li data-target="#theCarousel1" data-slide-to="3"></li>
-                    </ol>
-                    
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="./img/semilleros/Login.png" alt="Ilustracion"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Login</h3>
-                                <p>Login aplicacion</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/semilleros/coordinadores.png" alt="pintura" width="600" height="424">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Coordinadores</h3> 
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/semilleros/coordinador.png" alt="fotografia" width="600" height="424"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Perfil Coordinador</h3>
-                            </div>
-                        </div>
-                        
-                        <div class="item">
-                            <img src="/img/semilleros/panelAdmin.png" alt="diseno" width="600" height="424"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Panel Administración</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/semilleros/proyecto.png" alt="diseno" width="600" height="424"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Registro proyecto de investigación</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/semilleros/proyectos.png" alt="diseno" width="600" height="424"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Proyectos registrados</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/semilleros/semilleristas.png" alt="diseno" width="600" height="424"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Semilleristas</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/semilleros/semillerista.png" alt="diseno" width="600" height="424"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Semillerista</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/semilleros/Semilleros.png" alt="diseno" width="600" height="424"> 
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Semilleros</h3>
-                            </div>
-                        </div>
-                      
-                        <a class="left carousel-control" href="#theCarousel1" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">anterior</span>
-                        </a>
-                        <a class="right carousel-control" href="#theCarousel1" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">siguiente</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-
-
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </div>
-                <!-- Mapa -->
-                <div class="col">
-                    <img src="img/ubicacion.png" alt="">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Pasto - Nariño
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                               +57 3222894510 
-                            </li>
-                            <li style="display: flex;">
-                                <i class="fa-solid fa-envelope"></i>
-                                 diegoagreda1996@gmail.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- footer -->
-    <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="redes">
-            <a href="https://www.facebook.com/profile.php?id=100008639956442" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://github.com/diegosagreda" target="_blank"><i class="fa-brands fa-github"></i></a>
-       
-            <a href="https://www.linkedin.com/in/luis-diego-agreda/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        
-        </div>
-    </footer>
-
-   
     <script src="script.js"></script>
-
- 
 </body>
 </html>
